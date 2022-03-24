@@ -92,9 +92,10 @@ body {
     letter-spacing: 3px;
     cursor: pointer;
     font-family: $primary-font;
+    transition: 0.3s;
   }
 
-  .button:active {
+  .button:hover {
     background-color: $White;
     color: $primary-color;
   }

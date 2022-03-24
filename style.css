@@ -100,9 +100,11 @@ body {
   letter-spacing: 3px;
   cursor: pointer;
   font-family: "Overpass", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.container .button:active {
+.container .button:hover {
   background-color: white;
   color: #fb7413;
 }
