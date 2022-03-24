@@ -1,0 +1,140 @@
+$primary-font: "Overpass", sans-serif;
+$primary-color: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$-Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+body {
+  background-color: $Very-Dark-Blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 330px;
+  height: 300px;
+  background-color: $Dark-Blue;
+  border-radius: 20px;
+  padding: 30px;
+
+  .star {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 9%, 25%);
+    border-radius: 50%;
+
+    img {
+      width: 12px;
+    }
+  }
+
+  .text {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: $White;
+      font-family: $primary-font;
+    }
+
+    .content {
+      font-size: 14px;
+      color: $Light-Grey;
+      font-family: $primary-font;
+    }
+  }
+
+  .number {
+    display: flex;
+    justify-content: space-around;
+
+    .circle {
+      width: 45px;
+      height: 45px;
+      background-color: hsl(225, 9%, 25%);
+      border-radius: 50%;
+      color: $Light-Grey;
+      text-align: center;
+      line-height: 45px;
+      transform: translateX(-10px);
+      cursor: pointer;
+      transition: 0.5s;
+      border: none;
+      margin: 15px 0px;
+    }
+
+    .circle.change {
+      background-color: $Light-Grey;
+      color: $White;
+    }
+
+    .circle:hover {
+      background-color: $primary-color;
+      color: $White;
+    }
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-family: $primary-font;
+  }
+
+  .button:active {
+    background-color: $White;
+    color: $primary-color;
+  }
+}
+
+.thankyou-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  .thank-you {
+    width: 330px;
+    height: 300px;
+    background-color: $Dark-Blue;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+
+    .result {
+      background-color: hsl(225, 9%, 25%);
+      width: max-content;
+      margin: 20px auto;
+      padding: 3px 15px;
+      border-radius: 50px;
+      color: $primary-color;
+      font-family: $primary-font;
+      font-size: 13px;
+    }
+
+    .thanks {
+      color: $White;
+      font-size: 25px;
+      font-family: $primary-font;
+    }
+
+    .salute {
+      font-size: 14px;
+      color: $Light-Grey;
+      font-family: $primary-font;
+    }
+  }
+}

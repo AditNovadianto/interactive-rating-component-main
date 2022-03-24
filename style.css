@@ -1,0 +1,156 @@
+body {
+  background-color: #121417;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 330px;
+  height: 300px;
+  background-color: #252d37;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.container .star {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3a3d45;
+  border-radius: 50%;
+}
+
+.container .star img {
+  width: 12px;
+}
+
+.container .text .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+
+.container .text .content {
+  font-size: 14px;
+  color: #959eac;
+  font-family: "Overpass", sans-serif;
+}
+
+.container .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .number .circle {
+  width: 45px;
+  height: 45px;
+  background-color: #3a3d45;
+  border-radius: 50%;
+  color: #959eac;
+  text-align: center;
+  line-height: 45px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  margin: 15px 0px;
+}
+
+.container .number .circle.change {
+  background-color: #959eac;
+  color: white;
+}
+
+.container .number .circle:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.container .button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #fb7413;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-family: "Overpass", sans-serif;
+}
+
+.container .button:active {
+  background-color: white;
+  color: #fb7413;
+}
+
+.thankyou-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.thankyou-section .thank-you {
+  width: 330px;
+  height: 300px;
+  background-color: #252d37;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.thankyou-section .thank-you .result {
+  background-color: #3a3d45;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px auto;
+  padding: 3px 15px;
+  border-radius: 50px;
+  color: #fb7413;
+  font-family: "Overpass", sans-serif;
+  font-size: 13px;
+}
+
+.thankyou-section .thank-you .thanks {
+  color: white;
+  font-size: 25px;
+  font-family: "Overpass", sans-serif;
+}
+
+.thankyou-section .thank-you .salute {
+  font-size: 14px;
+  color: #959eac;
+  font-family: "Overpass", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
