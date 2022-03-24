@@ -101,6 +101,10 @@ body {
   }
 }
 
+.container.nope {
+  animation: nope 0.3s ease;
+}
+
 .thankyou-section {
   display: flex;
   justify-content: center;
@@ -137,5 +141,27 @@ body {
       color: $Light-Grey;
       font-family: $primary-font;
     }
+  }
+}
+
+@keyframes nope {
+  0% {
+    transform: translateX(5px) rotate(0.5deg);
+  }
+
+  30% {
+    transform: translateX(-5px) rotate(-0.5deg);
+  }
+
+  50% {
+    transform: translateX(5px) rotate(0.5deg);
+  }
+
+  70% {
+    transform: translateX(-5px) rotate(-0.5deg);
+  }
+
+  100% {
+    transform: translateX(5px) rotate(0.5deg);
   }
 }
